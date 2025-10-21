@@ -6,7 +6,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial">
+        <rdfs:comment>A tutorial ontology for the Pizza domain.</rdfs:comment>
+    </owl:Ontology>
 </rdf:RDF>
 
 
