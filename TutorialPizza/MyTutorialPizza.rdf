@@ -9,6 +9,317 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial">
         <rdfs:comment>A tutorial ontology for the Pizza domain.</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasBase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasIngredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasTopping">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#hasIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#AnchovyTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#AnchovyTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CaperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CaperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#DeepPanBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#DeepPanBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaBase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#ThiAndCrispyBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#GreenPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#GreenPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#HamTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#HamTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#JalaenoPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#JalaenoPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#ParmesanTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MushroomTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MushroomTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#ParmesanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#ParmesanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperoniTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperoniTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#Pizza"/>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PrawnTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PrawnTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#RedPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#RedPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SalamiTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SalamiTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SeafoodTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SeafoodTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SpicyBeefTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SpicyBeefTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#ThiAndCrispyBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#ThiAndCrispyBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#TunaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#TunaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#AnchovyTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PrawnTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#TunaTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CaperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MushroomTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#OliveTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#TomatoTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SeafoodTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#VegetableTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#GreenPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#JalaenoPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#RedPepperTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#HamTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PepperoniTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SalamiTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#SpicyBeefTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/espos/ontologies/2025/9/pizza-tutorial#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
